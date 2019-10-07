@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Open+Sans:600,700|Poppins:700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+}
+.menubar{
+  display: inline-grid;
+  min-height: 70px;
+  margin: 0 6.3%;
+  grid-template-columns: 1fr 1fr;
+  color: #fff;
+  position: relative;
+}
+.follow-us{
+  position: relative;
+  align-self: center;
+  width: 40%;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+}
+.follow-us-label{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+}
+.social{
+  align-content: stretch;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+}
+.fb, .ig{
+  position: relative;
+  left: 20px;
+  cursor: pointer;
+
+}
+.fb{
+  background: url('/images/icons8_facebook_48px.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 28px;
+  height: 28px;
+}
+.ig{
+  background: url('/images/icons8_instagram_new_48px.png');
+  background-size: cover;
+  background-position: center;
+  width: 28px;
+  height: 28px;
+}
+.search{
+  align-self: center;
+  justify-self: end;
+  cursor: pointer;
+}
+.search-icon{
+  position: relative;
+  background: url('/images/icons8_search_48px.png');
+  background-size: cover;
+  background-position: center;
+  width: 28px;
+  height: 28px;
+}
+.content{
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 6% 47% 40.5% 6%;
+  grid-template-rows: auto auto 45% 25%;
+  align-content: stretch;
+}
+.content h1{
+  position: relative;
+  grid-column: 2/2;
+  grid-row: 3/4;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 4em;
+  align-content: center;
+  line-height: 56px;
+}
+.underline-1{
+  text-decoration: none;
+  position: relative;
+}
+.underline-1:after{
+  content: "";
+  position: absolute;
+  left: -10px;
+  /* top:-110px; */
+  bottom: 65px;
+  border: 1px solid #fff;
+  animation-name: underline;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+@keyframes underline{
+  0%{transform: scaleY(0);}
+  100%{transform: scaleY(130);}
+}
+.video-container{
+  color: #fff;
+  grid-column: 3/3;
+  grid-row: 3/3;
+  text-align: right;
+}
+.video-container-grid{
+  align-content: stretch;
+  display: grid;
+  grid-template-columns: 47% auto;
+  grid-template-rows: 4fr 3.7fr .5fr;
+}
+.play-video{
+  cursor: pointer;
+  place-self: end;
+  grid-column: 1/1;
+  grid-row: 2/2;
+  background-color: #bd0000;
+  border: 8px solid rgb(255, 255, 255);
+  position: relative;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.triangle-play-button{
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 35px solid #fff;
+  position: relative;
+  left: 30px;
+}
+.take-a-look{
+  top: 9px;
+  align-self: end;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  letter-spacing: -1.5px;
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+.st-clare-college-video{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3.4em;
+  line-height: 48px;
+  grid-column: 2/2;
+}
+.watch-campus-video-tour{
+  bottom: 5px;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: .8em;
+  grid-column: 2/2;
+  grid-row: 3/3;
+  align-content: stretch;
+}
+.hero{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.hero-image{
+  background-image: url('/images/background-4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.navbar {
+  z-index: 2;
+  min-height: 100px;
+  display: inline-grid;
+  background: #bd0000;
+  color: #ffffff;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.logo-name, .right{
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+
+}
+.scc-logo {
+  justify-self: end;
+  background-image: url("/images/st-clare-college-caloocan-bnw.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 3.8px 0 4px 0;
+  width: 90px;
+  height: 100%;
+}
+.st-clare-college {
+  font-family: "Crimson Text", serif;
+  justify-self: start;
+  font-size: 17px;
+  font-size: 1.10em;
+  
+}
+.st-clare-college-st-clare {
+  position: absolute;
+  top: 20px;
+  font-weight: 700;
+}
+.st-clare-college-college {
+  position: relative;
+  top: 40px;
+  font-weight: 400;
+}
+.login-button, .plan-a-visit-button {
+  font-family: "Open Sans", sans-serif;
+  align-self: center;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+.login-button {
+  justify-self: end;
+  padding: 25px;
+}
+.plan-a-visit-button {
+  right: 15px;
+  background-color: #f5f5f5;
+  border: 6px solid #ffffff;
+  position: relative;
+  justify-self: start;
+  border-radius: 8px;
+  width: 150px;
+  height: 34px;
+}
+.menu{
+  list-style-type: none;
+  position: absolute;
+  height: 120px;
+  width: 300px;
+  border-top: 32.3px solid transparent;
+  border-bottom: 600px solid #C21717;
+  border-right: 20px solid transparent;
+  margin: 0 0 0 -36px;
+  transform-origin: 0% 0%;
+  transform: translate(-100%,0);
+  transition: transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+.menu li {
+  display: block;
+  margin: 50px 0;
+  padding: 0 30px;
+  font-size: 22px;
+}
+
+.menu a {
+  font-family: 'Open Sans',sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  transition: color 0.2s ease;
+}
+.menu>a:hover{
+  color: #fdbebe;
+}
+.menu-toggle{
+  display: block;
+  position: relative;
+  top: 37px;
+  left: 8%;
+  z-index: 1;
+  user-select: none;
+}
+.menu-toggle input{
+  display: block;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+.menu-toggle input:checked ~ ul{
+  transform: none;
+}
+.menu-toggle span{
+  display: block;
+  width: 35px;
+  height: 2px;
+  margin-bottom: 8px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 2px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+.menu-toggle span:first-child{
+  transform-origin: 0% 0%;
+}
+.menu-toggle span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+
+.menu-toggle input:checked~span{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+.menu-toggle input:checked~span:nth-last-child(2){
+  transform: rotate(-45deg) translate(0px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-last-child(3){
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
